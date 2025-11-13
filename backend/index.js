@@ -8,7 +8,7 @@ const port = 5000;
 
 
 const cors=require("cors");
-app.use(cors());
+app.use('*',cors());
 const cookieParser=require("cookie-parser");
 const bodyParser = require('body-parser');
 const morgan=require("morgan");
@@ -16,11 +16,6 @@ const morgan=require("morgan");
 
 
 //middleware
-app.use(cors({
-  origin: ['http://localhost:5173', 'https://mern-book-store-client.vercel.app', 'https://bookstore.nishantpatil.me/'],
-  methods: ["GET", "POST", "PUT", "DELETE"],
-  credentials: true,
-}));
 
 
 // app.use(cors());
