@@ -20,7 +20,7 @@ const CreateBook = () => {
     e.preventDefault();
     setLoading(true);
     try {
-      const res = await axios.post('http://localhost:5000/api/v1/create', {
+      const res = await axios.post('https://online-bookstore121-8fealw9fg-siddharthsrivastava112s-projects.vercel.app/api/v1/create', {
         title,
         genre,
         author,
