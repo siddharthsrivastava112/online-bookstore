@@ -21,7 +21,7 @@ const UpdateBook = () => {
     const fetchBook = async () => {
       setLoading(true);
       try {
-        const res = await axios.get(`https://online-bookstore121-8fealw9fg-siddharthsrivastava112s-projects.vercel.app/api/v1/book/${id}`);
+        const res = await axios.get(`https://online-bookstore111-gv6ajy3ti-siddharthsrivastava112s-projects.vercel.app/api/v1/book/${id}`);
         const { title, genre, author, year, pages, publisher } = res.data.data;
         setTitle(title);
         setGenre(genre);

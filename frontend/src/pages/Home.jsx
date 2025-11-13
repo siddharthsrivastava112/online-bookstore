@@ -16,7 +16,7 @@ const Home = () => {
       setLoading(true);
       try {
         // const res = await axios.get('http://localhost:8000/api/v1/allbooks',{withCredentials: true});
-        const res = await axios.get('https://online-bookstore121-8fealw9fg-siddharthsrivastava112s-projects.vercel.app/api/v1/allbooks');
+        const res = await axios.get('https://online-bookstore111-gv6ajy3ti-siddharthsrivastava112s-projects.vercel.app/api/v1/allbooks');
         //console.log('API Response:', res.data);
         setBooks(res.data.data); // Update books with the data property from the response
       } catch (error) {
