@@ -8,6 +8,7 @@ const port = 5000;
 
 
 const cors=require("cors");
+app.use(cors);
 const cookieParser=require("cookie-parser");
 const bodyParser = require('body-parser');
 const morgan=require("morgan");
